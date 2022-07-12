@@ -1,0 +1,87 @@
+.blc__services {
+    padding-top: 86px;
+    background-color: #e4fdf9;
+    height: auto;
+  
+    
+    &-title{
+        h1{
+        @include style_h1;
+        margin:0;
+        }
+        h3 {
+            @include style_h3;
+         
+        }
+    }
+
+    &-blocks{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .services-block{
+            margin: 8px;
+            width: 31%;
+            padding: 0 25px 0 25px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: space-around;
+            text-align: center;
+            height: 301px;
+            background-color: #fff;
+            transition: .8s all;
+            cursor: pointer;
+           
+            &__img{
+                width: 34px;
+                height: 35px;
+                background: #00897b;
+            }
+            &__title{
+                @include style_h3;
+                font-weight: 700;
+            }
+            &__text{
+                height: auto;
+                margin-bottom:25px;
+            }
+            &__button {
+           width: 118px;
+            height: 40px;
+            margin: 22px 23.5px 0 37px;
+            padding: 10.5px 7px 10.5px 7.5px;
+            border: solid 1px #212121;
+            background-color: transparent;
+            padding: 0 auto;
+            margin-bottom: 35px;
+            p {
+                font-size: 100%;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.1;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: #212121;
+            }
+            }
+            &:hover{
+                box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.35);
+                background-color: #00897b;
+                .services-block__title, .services-block__text, .services-block__button p {
+                    color: #fff;
+                }
+                .services-block__img{
+                    background-color: #fff;
+                }
+                .services-block__button {
+                border: solid 1px #fff;
+
+
+                }
+            }
+        }
+    }
+}

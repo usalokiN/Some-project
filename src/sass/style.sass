@@ -1,0 +1,61 @@
+@import '_header'
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,200;1,300&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,200;1,300&display=swap')
+@import '_scrollbar'
+@import '_variables'
+@import '_blc__about'
+@import '_blc__services'
+@import '_blc__works'
+@import '_blc__plan'
+@import '_blc__number'
+@import '_blc__blog'
+@import '_blc__contact'
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: OpenSans
+    list-style: none
+
+.container 
+    max-width: 701.5px
+    margin: 0 auto
+@media( max-width: 700px ) 
+    .header__nav-menu nav ul
+        display: none
+    .blc__about .about-content
+        display: flex
+    .blc__blog .blc__blog-block .block-content
+        flex-direction: column
+    .blc__services-blocks .services-block
+        width: 100%
+    .blc__number .blc__number-persons,
+    .blc__contact .blc__contant-info,
+    .blc__plan-blocks, .blc__works-tabs,
+    .header .header__banner-buttons,
+    .blc__contact .blc__contant-info, .blc__about .about-content,
+     .blc__blog .blc__blog-block .block-content__img,
+     .header__banner-buttons, .blc__blog .blc__blog-block .block-content .block-content__text .title .data 
+       flex-wrap: wrap
+    .blc__blog .blc__blog-block .block-content__img 
+        padding: 0 5px
+        width: 100%
+    .blc__contact .blc__contant-info
+        margin-top: 21.5px
+        flex-direction: column
+        align-items: center
+    @media( max-width: 530px )
+        .header .header__banner-buttons button
+            background: aquamarine            
+        .about-content
+            flex-direction: column
+            align-items: center
+        .header .header__banner-title h1
+            font-size: 2.5vh
+        blc__contact .info-block__text
+            font-size: 16px
+        
+           
+
+    
+    

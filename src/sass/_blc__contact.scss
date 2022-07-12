@@ -1,0 +1,114 @@
+.blc__contact {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),#000 center/cover url("../img/footer.jpg") no-repeat;
+        -webkit-box-shadow: inset 35px 35px 37px 2px rgba(0,0,0,0.77); 
+        box-shadow: inset 35px 35px 37px 2px rgba(0,0,0,0.77);
+    object-fit: fill;
+    margin-bottom: 5px;
+    
+    z-index: -1;
+    &-title{
+        position: relative;
+        z-index: 20;
+        padding-top: 64px;
+        h1 {
+            @include style_h1;
+            margin: 0;
+            color: #fff;
+        }
+        h3 {
+            @include style_h3;
+            color: #fff;
+        }
+    }
+    .blc__contant-info{
+        margin-top: 61.5px;
+        display: flex;
+    }
+    .info-block {
+        display: block;
+        justify-content: center;
+        width: 33.33%;
+        &__icon {
+        margin: 0 auto; 
+        width: 52.5px;
+        height: 52.5px;
+        background-color: #3949ab;
+        border-radius: 35px;
+        display: block;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        }
+        &__text {
+        @include style_h3;
+        color: #fff;
+
+        }
+    }
+    form {
+    
+        margin-top: 39.5px;       
+        // gap: 15px;   
+        .small-field {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0;
+        }
+        label {
+            position: absolute;
+        }
+        .input-group{
+          input {
+            max-width: 100%;
+            height: 42px;
+            margin: 39.5px 15.5px 16.5px 0;
+            padding: 17.5px 181px 17.5px 10.5px;
+            border-radius: 5px;
+            background-color: #fff;
+            position: relative;
+          }
+          textarea {
+            width: 100%;
+            height: 161.5px;
+            margin: 16.5px 0 19.5px;
+            padding: 14px;
+            border-radius: 5px;
+            outline: 0;
+            &::placeholder {
+             
+            }
+          }
+          
+        }
+        button {
+            max-width: 110px;
+            height: 35px;
+            margin: 19.5px 0.5px 0 104px;
+            padding: 14px 42px 14px 41.5px;
+            border-radius: 5px;
+            background-color: #fff;
+            display: flex;
+            text-align: center;
+            margin: 0 auto;
+            p{
+                text-transform: uppercase;
+                font-family: Roboto;
+                font-size: 10px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.1;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: #212121;
+            }
+          }
+    }
+}

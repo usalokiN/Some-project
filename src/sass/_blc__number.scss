@@ -1,0 +1,64 @@
+.blc__number {
+  margin-bottom: 86.5px;
+  
+    &-title {
+        h1 {
+            @include style_h1;
+        }
+        h3 {
+            @include style_h3;
+        }
+    }
+    .blc__number-persons{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .persons__block{
+            text-align: center;
+            &-img{
+                display: flex;
+                width: 200px;
+                height: 230px;
+                margin: 63.5px 14.5px 19px 0;
+                border-radius: 5%;
+                overflow: hidden;
+                img{
+                  width: 100%;
+                  height: auto;
+                  object-fit: cover;
+                }
+            }
+            
+            &-text {
+              span {
+
+                @include style_h3;
+                font-size: 2vh;
+              }
+              p {
+                height: 12px;
+                font-size: 1.7vh;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.47;
+                letter-spacing: 0.38px;
+                text-align: center;
+                color: #212121;
+              }
+            }
+            &-links {
+              display: flex;
+              justify-content: space-around;
+              
+              .facebook, .twitter, .whatsUp, .pinterest {
+                width: 25px;
+                height: 25px;
+                background-color: #3949ab;
+                border-radius: 5px;
+                overflow: hidden;
+              }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.blc__plan {
+     background-color: #e3eceb;
+     height: auto;
+    display: flex;
+    justify-content: center;
+    &-title{
+        
+        h1 {
+            
+            @include style_h1;
+            
+        }
+            h3 {
+            @include style_h3
+
+        }
+    }
+    &-blocks{
+        margin: 63px 0 62.5px 0;
+       display: flex;
+       justify-content: space-around;
+       gap: 20px;
+        .block{
+            width: 185px;
+            text-align: center;
+            align-items: center;
+            background-color: #fff;
+            transition: 1s;
+            &__title {
+               
+                display: grid;
+                justify-content: center;
+                background-color: #3949ab;
+                padding: 24px 47.5px 33.5px 51px;
+                 h1 {
+                    color:#fff;
+                    white-space: nowrap;
+                    text-align: center;
+                    justify-content: center;
+                 }
+                 span {
+                    color:#fff;
+                    display: flex;
+                    align-items:center;
+                    text-align: center;
+                    justify-content: center;
+                    h1 {
+                        margin: 0 7px 0 5px;
+                    }
+                 }
+                }
+            .block__ul{
+                align-items:center;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                li {
+                    margin-top: 24.5px;
+
+                    &::after{
+                    content: '';
+                    display: inline-block;
+                  
+                    border-bottom: .5px #3949ab solid;
+                    width:125px;
+              
+                    }
+                }
+            }
+            &__button {
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                @include style_button;
+                 transition: 3.1s;
+                 margin-bottom: 25px;
+            p{
+                font-weight: 600;
+                 transition: 1.1s;
+
+            }
+        }
+        &:hover {
+          
+            box-shadow: 18px 1.5px 18.5px 0 rgba(0, 0, 0, 0.35);
+            .block__button {
+                background: $green;
+
+            p {
+                color:#fff;
+            }
+        }
+        }
+    }
+}
+}

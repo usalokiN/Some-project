@@ -1,0 +1,98 @@
+.blc__works{
+     margin-bottom: 65px;
+    &-title{
+        text-align: center;
+        h1{
+            @include style_h1;
+        }
+        h3 {
+            @include style_h3;
+        }
+    }
+    &-tabs{
+        justify-content: center;
+        margin-top: 25px;
+        display: flex;
+
+        .tab {
+        display: grid;
+        @include style_button;
+        text-align: center;
+        align-content: center;
+        text-transform: uppercase;
+        border: solid 1px $green;
+        transition: .3s all ease-in;
+        cursor: pointer;
+        p{
+            font-size: 0.75rem;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.1;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: #212121;
+            transition: .35s all;
+        }
+        &:hover {
+            background: $green;
+            p{
+             color:#fff;
+                
+            }
+
+        }
+    }
+    }
+    &-photos{  
+        margin-top: 59px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14.5px;
+        .photo{
+            
+            width: 185px;
+            height: 185px;
+            background: url('../img/works.jpg') center (center/cover) no-repeat;
+            border: 1px solid $green;
+            transition: .35s all;
+            text-align: center;
+            padding: 0 auto;
+        
+              
+            span {
+                color: #fff;
+                height: 100%;
+                display: none;
+                align-items:center;
+            }
+            &:hover{
+                transition: .3s all;
+                background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/works.jpg');
+                -webkit-background-size: cover;
+                -moz-background-size:  cover;
+                -o-background-size: cover;
+                background-size: cover;
+                span {
+                    display: inline-grid;
+                    
+                }
+            }
+        }
+    }
+    &-view{
+        margin-top: 64.5px;
+        text-align: center;
+        button {
+            @include style_button;
+            color:rgb(10, 9, 9);
+            transition: .5s all;
+            border: 1px solid $green;
+            &:hover{
+                background: $green;
+                color: #fff;
+            }
+        }
+    }
+}

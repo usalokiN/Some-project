@@ -1,0 +1,48 @@
+.blc__about {
+    .about-title {
+        h1{
+        margin-top: 60.5px;
+        @include style_h1
+        }
+        h3{
+            margin-top: 18px;
+        
+        @include style_h3
+        }
+    }
+    .about-content{
+        margin: 50px 0 62.5px 0;
+        
+        &__block{
+            width: 33%;
+            display: table-cell;
+            height: auto;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            .block-img{
+            margin: 0 auto;
+            align-items:center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: aquamarine;
+            width: 31px;
+            height: 31px;
+            margin-bottom: 7px;
+            }
+        
+        .block-title{
+            @include style_h3;
+            font-weight:700; 
+            margin-bottom: 7px;
+
+        }
+        .block-text {
+           @include style_h3;
+           font-size: 1.5vh;
+            margin-bottom: 7px;
+
+        }
+        }
+    }
+    }

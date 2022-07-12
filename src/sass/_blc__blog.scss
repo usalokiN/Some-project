@@ -1,0 +1,104 @@
+.blc__blog{
+    padding: 62px 0 61.5px 0;
+    background-color: #e4fdf9;
+    .container {
+        max-width: 770px;
+    }
+    &-title{
+        h1 {
+            @include style_h1;
+            margin-top: 20px;
+        }
+        h3 {
+            @include style_h3;
+        }
+    }
+    .blc__blog-block{
+    .block-content{
+        display: flex;
+    
+        margin-top: 63px;
+        &__img{
+            padding-left: 15px;
+            display: flex;
+            width: 120%;
+            height: 225px;
+            img {
+                width: 100%;
+                object-fit: fill;
+
+            }
+        }
+        .block-content__text {
+            padding-top: 35px;
+            padding-left: 20px;
+            text-align: left;
+            justify-content: left;
+            .title {
+        
+
+
+                p{
+                text-align: left !important;
+                font-family: OpenSans;
+                font-size: 19.5px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 0.88;
+                letter-spacing: 0.63px;
+                text-align: center;
+                color: #00897b;
+                }
+                .data{
+                    display: flex;
+
+                    &_number, &_text{
+                        font-size: 18px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.29;
+                        letter-spacing: 0.43px;
+                        text-align: left;
+                        color: #212121;
+                    }
+                    &_desc{
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.47;
+                        letter-spacing: 0.38px;
+                        text-align: left;
+                        color: #212121;
+                    }
+                    :first-child{
+                        margin-right: 35px;
+                    }
+                }
+                :nth-child(n) {
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }
+}
+&-button{
+    margin-top: 62.5px;
+    display: flex;
+    justify-content: center;
+    button{
+    @include style_button;
+    background: #00897b;
+    width: 110px;
+    height: 35px;
+    p {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 600;
+        color:aliceblue;
+    }
+    }
+}
+}
