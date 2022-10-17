@@ -1,0 +1,129 @@
+
+
+
+.burger-menu_link {
+  padding: 18px 35px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+  color: #BB1E99;
+  border-bottom: 1px solid #fff;
+  background-color: #40c5b8;
+  transition: .5s ease-in-out;
+
+}
+
+.burger-menu_link:first-child {
+  border-top: 1px solid #fff;
+}
+.burger-menu_link:hover {
+  transform: scale(1.1, 1.1);
+  transition: .5s ease-in-out;
+  background-color: rgb(78, 197, 197);
+  filter: brightness(0.9);
+}
+
+.hamburger {
+  z-index: 50;
+  right: 0;
+  position:fixed; 
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  .hamburger-menu {
+        font-size: larger;
+        background: cadetblue;
+        width: 200%;
+        position: absolute;
+        margin: 15px -120px;
+        transition: 1s all;
+  
+  }
+  .hamburger-menu__active {
+        display: grid;
+  }
+}
+
+
+.hamburger {
+  
+  }
+  
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #000;
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+  .hamburger-inner:hover,
+  .hamburger-inner::before:hover,
+  .hamburger-inner::after :hover {
+  background-color: aqua;
+
+}
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
+.show {
+  display: grid;
+  transition: 0.8s all;
+}
+.hide {
+  display: none;
+}
+.backlight {
+  background-color:aqua;
+}
+.fade {
+  transition: 3s all;
+}
