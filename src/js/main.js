@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
                                         menu.classList.add('show', 'fade');
                                         menu.classList.remove('hide');
                                 } else {
-                                        menu.classList.remove('show', 'fadegit ');
+                                        menu.classList.remove('show', 'fade');
                                         menu.classList.add('hide');
 
                         }
